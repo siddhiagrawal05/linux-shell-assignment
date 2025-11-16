@@ -1,0 +1,28 @@
+ubuntu@ubuntu:~$ #!/bin/bash
+# Purpose: To download a file automatically using wget
+# Author: Siddhi
+# Date: 16-11-2025
+
+# URL of file to download
+URL="https://example.com/sample.txt"
+
+# Download location
+DOWNLOAD_DIR="/home/user/downloads"
+
+# Create folder if not exists
+mkdir -p $DOWNLOAD_DIR
+
+# Download file
+wget -P $DOWNLOAD_DIR $URL
+
+# Message
+echo "File downloaded successfully to $DOWNLOAD_DIR"
+mkdir: cannot create directory ‘/home/user’: Permission denied
+--2025-11-16 15:57:46--  https://example.com/sample.txt
+Resolving example.com (example.com)... 23.192.228.80, 23.192.228.84, 23.215.0.136, ...
+Connecting to example.com (example.com)|23.192.228.80|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-11-16 15:57:47 ERROR 404: Not Found.
+
+File downloaded successfully to /home/user/downloads
+
