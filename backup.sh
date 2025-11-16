@@ -15,5 +15,4 @@ mkdir -p "$BACKUP_DIR"                    # create backup folder if missing
 cp -r "$SOURCE_DIR" "$DEST"               # copy the folder
 
 echo "Backup completed and saved in $DEST"
-Backup completed and saved in /home/ubuntu/backup/backup_2025-11-16_13-59-28
 
